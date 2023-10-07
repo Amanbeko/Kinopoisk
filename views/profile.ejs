@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('partials/head.ejs') %>
-    <title>Kinopoisk</title>
+    <title>UserProfile</title>
 </head>
 <body>
     <%- include('partials/header.ejs') %>
@@ -15,7 +15,19 @@
                 <a href="">Ужасы</a>
             </div>
             <div class="main-content">
-                <h3>Фильмы и сериалы</h3>
+                <h3>Профиль</h3>
+                <div class="profile"> 
+                    <div class="profile-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="profile-info">
+                        <p><span>Полное имя: </span>Аманбек Абылай</p>
+                        <p><span>E-mail: </span>amanbekovnurmakhanbet@gmail.com</p>
+                        <button class="edit-btn">Редактировать профиль</button>
+                        <button class="logout-btn">Выход</button>
+                    </div>
+                </div>
+                <h3>Сохраненные фильмы</h3>
                 <div class="main-card">
                     <div class="card-left">
                         <div class="film-img">

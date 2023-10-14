@@ -10,9 +10,9 @@
         <div class="main">
             <div class="categories">
                 <h3>Жанры</h3>
-                <a href="">Драма</a>
-                <a href="">Комедии</a>
-                <a href="">Ужасы</a>
+                <% genres.forEach(genre => {%>
+                    <a href="/<%=genre.key %>"><%=genre.name %></a>
+                <%});%>
             </div>
             <div class="main-content">
                 <h3>Фильмы и сериалы</h3>
@@ -36,7 +36,7 @@
                             <p>7.3</p>
                         </div>
                         <button class="film-btn">
-                            <img src="" alt="">
+                            <img src="/images/icons/budu.svg" alt="">
                             Буду смотреть
                         </button>
                     </div>
